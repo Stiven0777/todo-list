@@ -1,0 +1,241 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #ce1616;
+  margin-bottom: 20px;
+}
+
+/* Estilos de la entrada de la tarea */
+.todo-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#addTaskBtn {
+  background-color: #ce1616;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#addTaskBtn:hover {
+  background-color: #a81111;
+}
+
+/* Estilos de la lista de tareas */
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  padding: 12px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-text {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.completed-task {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Estilos para los mensajes de estado */
+.status-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  z-index: 1000;
+  display: none;
+}
+
+.completed-message {
+  background-color: #4caf50; /* Verde */
+}
+
+.error-message {
+  background-color: #f44336; /* Rojo */
+}
+
+.info-message {
+  background-color: #2196f3; /* Azul */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('nombre-de-tu-imagen.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+.completed-task {
+  text-decoration: line-through;
+  color: #555; /* Cambia el color a algo más legible en tu fondo */
+}
+/* ... (otros estilos) */
+
+.task-item {
+  padding: 12px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform-style: preserve-3d; /* Importante para las animaciones 3D */
+  transition: transform 0.3s ease-in-out; /* Transición suave para el efecto */
+}
+
+.task-item:hover {
+  transform: rotateY(10deg); /* Rotación en el eje Y al pasar el mouse */
+}
+
+/* Resto de tus estilos */
+/* ... (otros estilos) */
+
+#addTaskBtn {
+  background-color: #ce1616;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Agregar transform a la transición */
+}
+
+#addTaskBtn:hover {
+  background-color: #a81111;
+  transform: scale(1.1) rotateY(10deg); /* Escala y rotación al pasar el mouse */
+}
+
+/* Resto de tus estilos */
+/* ... (otros estilos) */
+
+.complete-btn,
+.delete-btn {
+  background-color: #ce1616;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Agregar transform a la transición */
+}
+
+.complete-btn:hover,
+.delete-btn:hover {
+  background-color: #a81111;
+  transform: scale(1.1) rotateY(10deg); /* Escala y rotación al pasar el mouse */
+}
+
+/* Resto de tus estilos */
+/* ... (otros estilos) */
+
+.task-item {
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease-in-out;
+}
+
+.complete-btn,
+.delete-btn {
+  background-color: #4caf50;;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+.complete-btn:hover,
+.delete-btn:hover {
+  background-color: #a81111;
+  transform: scale(1.1) rotateY(10deg);
+}
+
+/* Resto de tus estilos */
+.active-tasks-container,
+.deleted-tasks-container {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.trash-icon {
+  font-size: 24px;
+  color: #ce1616;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.trash-icon:hover {
+  color: #a81111;
+}
+/* styles.css */
+.task-container {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: none;
+}
+
+.trash-icon {
+  font-size: 24px;
+  color: #ce1616;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.trash-icon:hover {
+  color: #a81111;
+}
+
